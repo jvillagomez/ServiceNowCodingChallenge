@@ -112,8 +112,10 @@ router.get('/incidentsByState', (req, res) => {
 
 // Return single incident, by ID.
 router.post('/insertIncident', (req, res) => {
+    console.log('req', req);
     let newIncident = req.body;
-    if (!Object.keys(newIncident.length)) {
+    console.log('newIncident', newIncident);
+    if (!Object.keys(newIncident).length) {
         return res.send('No data provided for insertion');
     }
     const requiredIncidentFields = ['number', 'state', 'short_description'];
