@@ -23,6 +23,7 @@
   "homepage": "https://github.com/neverendingqs/netlify-express#readme",
   "dependencies": {
     "cors": "2.8.5",
+    "encoding": "^0.1.12",
     "faunadb": "2.13.1"
   },
   "devDependencies": {
